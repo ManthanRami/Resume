@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Personal site</title>
+    <style>
+/* table, th, td {
+  border: 1px solid black;
+  /* border-collapse: collapse; 
+} */
+
+body {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  width: 21cm;
+  height: 58.7cm; 
+}
+</style>
+</head>
+<body>
+    <div style="margin: 10px;">
+<table style="width:100%;" cellpadding="0">
+    <tr >
+        <!-- <td><img src="myimage.png" style="width: 30%; "></td> -->
+        <td style="width: 100%;  text-align:left; ">
+            <strong style="font-size: 200%;">
+                Manthan Rami
+            </strong> 
+            <p>
+                <em>New grad <strong>Software Engineering</strong> </em>
+            </p>
+        </td>
+        <td >
+            <pre style="font-size: large; line-height: 22px;">
+                <img src="data:image/png;base64,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" style="width: 15px;"> Halifax, NS
+                <img src="data:image/png;base64,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" style="width: 15px;"> +1(519)-503-0896
+                <img src="data:image/png;base64,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" style="width: 15px;"> <a href="ramimanthan1999@outlook.com">ramimanthan1999@outlook.com</a>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEUAAAD///9GRkalpaXMzMzk5OTo6Og+Pj5JSUlMTEzr6+vg4OCDg4P09PQhISHR0dG4uLiUlJTb29t5eXn5+fkRERGurq4tLS2+vr7ExMQlJSVeXl6enp4XFxeMjIzV1dVqamo5OTmOjo5jY2N9fX0LCwuZmZkjIyP+13p7AAAE6klEQVR4nO2d2XLiMBBFJRZv2GAWs4UEMpMw//+HAyEQgxd1YnW01D1vqcJxn7KNhLrVFvKB4TKNx4VwkWIcp8vho5C4+yuYrkyH2ZnVMWg0TN5MR6eJNKk3PJoOTCP9GsMgNB2VVnrJo+HEdEi6eZ/dG65NB8TAoGy4MR0NC5Mvw5HpWJgIbobuD4L1hFfDP6YjYWN3MRyajoOR5MPwYDoMRtKzoc+X8HwRhcdP4Zn+yXBrOghWelL4OhZeyUTfdAjM5GJuOgRmpuLVdAjMPAk3l2TorMS76RCYeTYdAAAAAOAeRThf5us8T+Ox6VA4GL9Nsq90wGzq3Yx2V9K7kHu1Cjmv+HmWrlrX+Z3vVU+ex1sep0rmxdP4XsmN+6bYfAU/FP+Zjq8zeavg6Vk0HWBXDgpBKXemQ+xI7TBxj9vj4k4t6HYK+ZlwCaXsmQ6zA3OKoHR54XxAMnQ4Q/e8IBlKd8uNYpqgdLciLiUaLk0H+mOWREN3xwvVjO3K3nSgP4Zq6G4mmWro7uyb+hy6W7z5RjR0t3ozIhq6uyRFndPEpgP9OXuSYOZwLpk2qXH3MRRiRbpN/5oOswuUEdHd8f7M1vdLKMRUKejutPuT9gVhKRcOf5Fe2Cq+bJ5MB9idsFXRi+LGqEXRC0EhXpuyT5kHt+gn/VrBjU+VjVF1hjpyfBysEPXL92qS+3ODluhN1/tRMtxvdrFP9ycAAAAAAAAAAGCIbRjHcehJlfwjr2k+Ci4FkVkwyl88WyspjtVly8UgZT6rOpXfUPKlPO6xzOjQmHBeR5yGPWWkDdWlyuMGdx9P2/Y8yNnBdcNDoPr0iM3xNwzHpELdGVMV6y8YUms85dRRQ2rx3IkJx8YHbsPtiC54GjsYapOYDWNi1dUN/QlLXsOnb/pJhk1IrIbUSnnK+aw03JJ25FTQfBU5Db/1JVPixRHDDWXXWD1as898honyE41kOn878hl2Qef2BzsNdU7gLDXUuJnMVkN9GyBsNZQH7w21VSZba6htULTXUNdFtNdQ1z4Wiw1ztwyz0X6/n31rJpc5ZJj1P3trFeH0Gz84Dq4YJvcrE7Fqd8ANPbcpv2H1eOryop5OB9yGi7phLVQugV/Q0uCI2TCrn0E/057GgwOGjUu8pKuopdMBr2FzAnRFOXzQeLgthm0Lg5TGMVombpyGSeuZKQkp2w3bW6JQlostN1TNuggjv+WGqm9CwsCvI9vGaKiqJBmr/4WOHlyMhspzq39p2G0YKM+9cdxQvR6obq1it6F6QlK/6xGGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIRhO7/XR7iKet+TjgbDRdRrJ2rY5ag6rqduF7BSnrvQYAgAAAAAACzA94ldITx9Xc2NrWDoxG8VseB+TY1pXoSWfmAWkwt1CxW3SYSexnzWEkohj6aDYGV3MvT7Nk1OhgyvNbGHN3k29PkiJh+GTG9RsoHzCzQ+1m05XqJkA6G8GuppVmsfwc1QbkzHwsJEfhnKteloGPhsDnrNn+h7W4QlvF8bZ94yRAHTq/cMEd1aLpZyYD5N30qJx3KWL/BldpOWe2be5zGH063p6DqzOt73BK1kaofLNBq7uTxV/IvTZaUN+H9MGVFBV0iEpwAAAABJRU5ErkJggg==" style="width: 15px;"> <a href="https://www.linkedin.com/in/manthanrami">linkedin.com/in/manthanrami</a>
+                <img src="data:image/png;base64,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" style="width: 15px;"> <a href="https://www.github.com/ManthanRami">www.github.com/ManthanRami</a>
+            </pre>
+        </td>
+    </tr>
+    
+
+</table>
+<div style="font-size: 100%;"> 
+<hr size="3" color="black">
+<h3> EXECUTIVE SUMMARY</h3>
+<ul>
+    <li  >Highly skilled and recent graduate seeking a fulltime position in software development field. My experience
+        and industry knowledge have prepared me for new opportunities where I can utilize my software
+        development skills.</li><br>
+    <li>Ability to perform well in a fast-paced environment, passionate about building new products with (TDD)
+        Test-Driven Development and delivering rich UI experience.</li><br>
+    <li>
+        Develop, create and modify general mobile applications or specialized utility programs.
+    </li>
+</ul>
+
+
+<hr size="3" color="black">
+<h3>PROFESSIONAL SKILLS</h3>
+<ul>
+    <li><strong>Web Technology:</strong> JavaScript, HTML, CSS, jQuery, Bootstrap, ReactJS (Learning)</li>
+    <li><strong>Technology known:</strong> C#, C, C++, MySQL,</li>
+    <li><strong>Concepts:</strong>Object-Oriented Programming, Functional Programing, MVC, Unit-Testing, TDD development,
+        Agile Methodologies, Scrum, QA Testing.</li>
+    <li><strong>Tool Used:</strong>Visual Studio, Vs Code, GIT/GitHub, Pivotal Tracker, GDB Debugger, Android Studio.</li>
+</ul>
+
+
+
+<hr size="3" color="black">
+<h3>EDUCATION</h3>
+<table style="width: 100%; white-space: wrap;">
+    <tr style="width: 100%;  text-align:left; ">
+        <td>
+            Diploma in Software Engineering Technician
+        </td>
+        <td style="font-size: 10px;  text-align:right; ">
+            SEPT 2018 - APR 2020
+        </td>
+    </tr>
+</table>
+ 
+<br>Conestoga College, Waterloo, Canada<br> <br>
+<strong>Program Highlights:</strong>
+<ul>
+    <li>A focused, hands-on approach.</li>
+    <li>One of the strongest programs of its type in Ontario.</li>
+    <li>Board base of languages and technologies, including web development, databases, and cyber-security.</li>
+</ul>
+
+
+
+<hr size="3" color="black">
+<h3>EXPERIENCE</h3>
+<table style="width: 100%; white-space: wrap;">
+    <tr style="width: 100%;  text-align:left; ">
+        <td>
+            <strong>Personal Tutor</strong>
+        </td>
+        <td style="font-size: 10px;  text-align:right; ">
+            SEPT 2018 - APR 2020
+        </td>
+    </tr>
+</table>
+<br>Conetogac College
+<ul>
+    <li>Teaching first-year students of Electrical and Computer Engineering.
+    </li>
+    <li>
+        Helping them with academic material including C/C++ and Object-Oriented programming.
+    </li>
+    <li>Preparing them for the exam by teaching them basic fundaments and logic making practice.</li>
+</ul><br>
+
+
+
+
+<table style="width: 100%; white-space: wrap;">
+    <tr style="width: 100%;  text-align:left; ">
+        <td>
+            <strong>Computer Reparier</strong>
+        </td>
+        <td style="  text-align:right; font-size: 10px; ">
+            SEPT 2018 - APR 2020
+        </td>
+    </tr>
+</table>
+
+<br> HR Infotech
+<ul>
+    <li>Installing Software and hardware products.</li>
+    <li>Diagnose and troubleshooting software issues including virus-infected, junk overflow and OS.</li>
+    <li>Providing setup and installation of a device such as a router, printer and scanner.</li>
+    <li> Maintained contact with clients to identify and provide personal repair solutions.</li>
+    <li>Providing remote service for software related issues.</li>
+</ul>
+
+
+<hr size="3" color="black">
+<h3>PROJECTS</h3>
+<table style="width: 100%; white-space: wrap;">
+    <tr style="width: 100%;  text-align:left; ">
+        <td> Database backed Retail Wallpaper POS Desktop Application</td>
+        <td style="  text-align:right; font-size: 10px; ">-C#, WPF, My SQL, Visual Studio (Winter 2019)</td>
+    </tr>
+</table>
+
+<ul>
+    <li>Add a new Wallpaper/customer.</li>
+    <li>Search order history.</li>
+    <li>It Generate order receipt with OrderID, and search/modify order using OrderID.</li>
+    <li>A Check the inventory status of each of the branches of dealership. </li>
+    <li> Application was designed/coded in C#</li>
+</ul>
+
+
+
+<table style="width: 100%; white-space: wrap;">
+    <tr style="width: 100%;  text-align:left; ">
+        <td> SET Pizza Shop</td>
+        <td style="  text-align:right; font-size: 10px; ">-HTML, PHP, AJAX, CSS, VS code (Winter 2020))</td>
+    </tr>
+</table>
+<ul>
+    <li>This a web application for online pizza ordering service.</li>
+    <li>It uses HTML for the webpage, JavaScript for client-side validation, PHP for server-side backend logic
+        and AJAX for Updating the total amount of order as per the number of toppings selected by the user.</li>
+    <li>In the end, it generates Total bill and wishes user.</li>
+</ul>
+
+<table style="width: 100%; white-space: wrap;">
+    <tr style="width: 100%;  text-align:left; ">
+        <td>High-Low Game (Client/Server side)</td>
+        <td style="  text-align:right; font-size: 10px;">-C#, asp.net, CSS, Visual Studio (Winter 2020)</td>
+    </tr>
+</table>
+<ul>
+    <li> A web application game developed using asp.net web technology.</li>
+    <li>Simple game created on both Client and Server side to understand the confidentiality of business logic.</li>
+    <li>In this game, the user has to select any random number between 1 to 100 and the game will select a
+        random number between one to user-selected number and prompt user to guess it with a hint.</li>
+</ul>
+
+<table style="width: 100%; white-space: wrap;">
+    <tr style="width: 100%;  text-align:left; ">
+        <td>Group Chat System (Developed in Linux as well</td>
+        <td style="  text-align:right; font-size: 10px;">-C#, (TCP-IP), WPF, Visual Studio (Winter 2020)</td>
+    </tr>
+</table>
+<ul>
+    <li>A multi-thread application created using Windows power form (WPF).</li>
+    <li>It allows the user to connect with each other under a local network using TCP/IP protocol.</li>
+    <li>It allows multiple users to connect within a group at the same time and can have a conversation with each other and notifies whenever a user is connected or leave the group conversation.</li>
+</ul>
+
+
+<table style="width: 100%; white-space: wrap;">
+    <tr style="width: 100%;  text-align:left; ">
+        <td>Transportation Management System (TMS)</td>
+        <td style="  text-align:right; font-size: 10px;">-C#, WPF, My SQL, Visual Studio (Winter 2019)</td>
+    </tr>
+</table>
+<ul>
+    <li>A Desktop Application developed using dot.Net framework which fulfills essential needs of a Logistic Company to manage their whole order management system.</li>
+    <li>Features are as: selection of the database, Backup, Log File, getting contract from marketplace database, Carrier selection to deliver the order, finding shortest route and generating bills.</li>
+    <li>It demonstrates the use of MVC and use of MY SQL database management for data storing.</li>
+</ul>
+
+
+<hr size="3" color="black">
+<h3>ACTIVITY</h3>
+<ul>
+    <li> Attending socializing events such as Hacker Nest and DevHouse Waterloo.</li>
+    <li>Reading blogs and articles from Hacker News.</li>
+    <li>Learning new Technology and tech photography.</li>
+</ul>
+
+<hr size="3" color="black">
+<h3>REFERENCES</h3>
+<ul>
+    <li>Available upon request.</li>
+</ul>
+</div>
+</body>
+</html>
